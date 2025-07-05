@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
 import { Suspense, lazy } from 'react';
 import dog from '../img/dog-walking-61.svg'
+import loadingdog from '../img/animated-dog-image-0931.gif'
 const LazyComponent = lazy(() => import('../components/BreedCard'));
 
 function Breeds() {
@@ -39,16 +40,19 @@ function Breeds() {
 
     if (isLoading) {
         return (
-             <svg class="mr-3 size-5 animate-spin ..." viewBox="0 0 24 24">
+            <div className="flex h-100 align-bottom justify-center">
 
-  </svg>
+             <img src={loadingdog} alt="" />
+            </div>
+
+
         );
     }
 
     return (
         <div className="min-h-screen bg-[#F9F3EF]">
             <section className="h-96 d-flex justify-center">
-                <div class='container px-12 grid md:grid-cols-2 grid-cols-1'>
+                <div className='container px-12 grid md:grid-cols-2 grid-cols-1'>
                 <div className="p-10 pt-10 md:pt-[10rem]">
                     <h1 className='text-2xl my-5 font-bold text-deep'>All breeds are here </h1>
                     <p className='text-md my-5 text-ocean'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam adipisci molestias explicabo eveniet error suscipit ipsa facere! Nostrum vero reiciendis rerum incidunt officia cupiditate magnam fugiat sapiente laudantium voluptas quibusdam nisi porro, dolor obcaecati qui deleniti, et ullam quo reprehenderit. Error eaque rem repudiandae culpa perferendis magni est sequi.</p>
