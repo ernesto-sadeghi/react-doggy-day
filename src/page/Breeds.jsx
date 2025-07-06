@@ -40,9 +40,9 @@ function Breeds() {
 
     if (isLoading) {
         return (
-            <div className="flex h-100 align-bottom justify-center">
+            <div className=" h-[70vh] flex flex-col-reverse flex-wrap content-center  ">
 
-             <img src={loadingdog} alt="" />
+             <img src={loadingdog} className='max-w-60'  alt="" />
             </div>
 
 
