@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import loadingDog from '../img/animated-dog-image-0931.gif';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { AIrequest } from "../composable/useAIanswer";
 function FunFact() {
     const [img, setImg] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -12,28 +12,8 @@ function FunFact() {
     const [explanation, setExplanation] = useState("");
 
     // These should ideally come from environment variables
-    const API_KEY = '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';
-    const API_ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
 
-    async function AIrequest(messageContent) {
-        try {
-            const response = await axios.post(API_ENDPOINT, {
-                model: 'mistralai/mistral-small-3.2-24b-instruct:free',
-                messages: [
-                    { role: 'user', content: messageContent }
-                ]
-            }, {
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${API_KEY}`
-                }
-            });
-            return response.data;
-        } catch (error) {
-            console.error('AI API error:', error);
-            throw new Error('Failed to get dog description');
-        }
-    }
+ 
 
     useEffect(() => {
         if (!img) return;

@@ -7,38 +7,16 @@ import logo from '../logo.svg'
 import pattern from '../img/vecteezy_leaf-background-palm-leaf-pattern-nature-summer_6526674.jpg'
 import littleDog from '../img/animated-dog-image-0931.gif'
 import Swal from 'sweetalert2';
+import { AIrequest } from '../composable/useAIanswer';
 function BreedCard({ breed, subBreeds }) {
     const [image, setImage] = useState('')
     const [loading, setLoading] = useState(true)
     const [loadingAIanswer, setLoadingAIanswer] = useState(false)
 
 
-    const API_KEY = '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'; // Replace with your actual API key
-    const API_ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions'; // Example endpoint
-
-    async function getDeepSeekCompletion(messageContent) {
-        try {
-            const response = await axios.post(API_ENDPOINT, {
-                model: 'openrouter/cypher-alpha:free',
-                messages: [
-                    { role: 'user', content: messageContent }
-                ]
-            }, {
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${API_KEY}`
-                }
-            });
-            return response.data;
-        } catch (error) {
-            console.error('Error making DeepSeek API request:', error.response ? error.response.data : error.message);
-            throw error;
-        }
-    }
-
     const giveInfo = (breed) => {
         setLoadingAIanswer(true)
-        getDeepSeekCompletion(`give me very short information about ${breed} dog `)
+        AIrequest(`give me very short information about ${breed} dog `)
             .then(data => {
                 setLoadingAIanswer(false)
 
