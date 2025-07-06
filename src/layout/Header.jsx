@@ -20,7 +20,7 @@ function Header() {
 
 
                     <nav className="w-full md:w-auto">
-                        <ul className="flex items-center space-x-1 md:space-x-6">
+                        <ul className="flex flex-wrap items-center space-x-1 md:space-x-6">
                             <li>
                                 <NavLink to="/" className="px-4 py-2 rounded-full flex items-center hover:bg-ocean hover:bg-opacity-20 transition duration-300">
                                     <FontAwesomeIcon icon="home" className="mr-2 text-clay" />
@@ -34,13 +34,13 @@ function Header() {
                                 </NavLink>
                             </li>
                           
-                            <li>
+                            <li className='flex-shrink-0'>
                                 <NavLink to="/breeds" className="px-4 py-2 rounded-full flex items-center hover:bg-ocean hover:bg-opacity-20 transition duration-300">
                                     <FontAwesomeIcon icon="dog" className="mr-2 text-clay" />
                                     <span>All Breeds</span>
                                 </NavLink>
                             </li>
-                            <li className="ml-2">
+                            <li className="ml-2 flex flex-shrink-1">
                                 <NavLink to="contact" className="px-6 py-2 bg-clay text-deep font-bold rounded-full flex items-center hover:bg-cream hover:text-deep transition duration-300">
                                     <FontAwesomeIcon icon="phone-alt" className="mr-2" />
                                     <span>Contact</span>
