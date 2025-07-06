@@ -23,7 +23,7 @@ function Footer() {
                                 <FontAwesomeIcon icon={['fab', 'instagram']} />
                             </a>
                             <a href="https://ernestoshop.liara.run" className="w-10 h-10 rounded-full bg-ocean bg-opacity-20 flex items-center justify-center hover:bg-clay hover:text-deep transition duration-300">
-                                <FontAwesomeIcon icon={['fab', 'yelp']} />
+                                <FontAwesomeIcon icon={['fab', 'github']} />
                             </a>
                             <a href="https://ernestoshop.liara.run" className="w-10 h-10 rounded-full bg-ocean bg-opacity-20 flex items-center justify-center hover:bg-clay hover:text-deep transition duration-300">
                                 <FontAwesomeIcon icon={['fab', 'tiktok']} />
