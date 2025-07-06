@@ -8,9 +8,9 @@ function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
                     {/* Footer Column 1 - About */}
                     <div className="md:col-span-2">
-                        <div className="flex items-center mb-5">
-                            <div className="w-10 h-10 bg-creamdark rounded-full flex items-center justify-center mr-3">
-                             <img src={logo} alt="" />
+                        <div className="flex items-center group mb-5">
+                            <div className="w-12 h-12 bg-creamdark rounded-full flex items-center justify-center mr-3 transform group-hover:-rotate-[360deg] transition duration-[2s]">
+                                <img src={logo} alt="" />
                             </div>
                             <h2 className="text-2xl font-display font-bold">Doggy-Day.jsx</h2>
                         </div>

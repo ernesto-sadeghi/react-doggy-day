@@ -3,6 +3,22 @@
     text-align: justify;
   
 }
+.active{
+  background: linear-gradient(65deg, #D2C1B6 , #1B3C53 , #D2C1B6 );
+  background-size: 200% 200%;
+  background-position: 0%  50%;
+ animation: activser 1s ease-in forwards; 
+}
+@keyframes activser {
+  0%{
+    background-position: 0%  50%;
+    
+  }
+  100%{
+    background-position: 100%  50%;
+
+  }
+}  
 
 .chance-btn{
     border: none;
