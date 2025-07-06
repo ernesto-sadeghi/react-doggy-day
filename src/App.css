@@ -3,3 +3,17 @@
     text-align: justify;
   
 }
+
+.chance-btn{
+    border: none;
+      background: linear-gradient(65deg, #D2C1B6 , #1B3C53 , #D2C1B6 );
+      box-shadow: 4px 4px 8px #B8A89E, -4px -4px 8px #ECDAD0;
+      background-size: 200% 200%;
+      background-position: 0%  50%;
+    }
+    
+    .chance-btn:hover{
+    box-shadow: 4px 4px 8px  #1B3C53, -4px -4px 8px #ECDAD0;
+    color: white;
+    background-position: 100%  50%;
+}
