@@ -21,7 +21,7 @@ A fun React-based web application that lets you explore the world of dogs with i
   - Toggle between themes with a simple switch
 
 ## live demo 🐕 :
-http://doggy-day.unaux.com 
+http://doggy-day.unaux.com/?i=1
 
 ## Installation 🛠️
 
