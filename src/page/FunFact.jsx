@@ -55,29 +55,31 @@ function FunFact() {
     return (
         <>
          <div className=" top-4 left-4  w-full">
-                <div className="bg-cream border-4 border-ocean p-4 rounded-lg shadow-md">
+                <div className="bg-cream  dark:bg-creamdark dark:border-lightCream border-4 border-ocean p-4 rounded-lg shadow-md">
                     <div className="flex">
                         <div className="flex-shrink-0">
 
-                            <svg className="h-5 w-5 text-ocean" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <svg className="h-5 w-5  dark:text-lightCream text-ocean" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9z" clip-rule="evenodd" />
                             </svg>
                         </div>
                         <div className="ml-3">
-                            <h3 className="text-sm font-medium text-ocean">Information</h3>
-                            <div className="mt-1 text-sm text-ocean">
-                                <p>if you are opening this site in IR.Iran , it better to turn on your vpn .</p>
+                            <h3 className="text-sm  dark:text-lightCream font-medium text-ocean">Information</h3>
+                            <div className="mt-1  dark:text-lightCream text-sm text-ocean">
+                                <p>if you are opening this site in IR.Iran , you might need to turn on your vpn .</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="min-h-screen flex items-center justify-center p-4">
+            <div className="min-h-screen flex items-center justify-center p-4 bg-clay">
                 <div className="w-full max-w-md rounded-2xl p-0 overflow-hidden animate-clay-pulse"
                     style={{
                         background: 'linear-gradient(145deg, #D2C1B6 0%, #D2C1B6DD 100%)',
                         boxShadow: '8px 8px 16px #C1B1A6, -8px -8px 16px #E3D1C6'
-                    }}>
+                    }}
+                  
+                    >
 
                     <div className="bg-[#1B3C53] text-[#F9F3EF] p-6 text-center border-b border-[#D2C1B6DD]/30">
                         <h1 className="font-serif text-2xl font-medium tracking-tight">What if you were a dog?</h1>

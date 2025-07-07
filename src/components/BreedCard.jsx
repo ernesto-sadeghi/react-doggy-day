@@ -60,9 +60,9 @@ function BreedCard({ breed, subBreeds }) {
     }, [breed])
     if (loading) {
         return (
-            <div className="mx-auto  max-w-sm animate-pulse w-80 h-96 mt-16 flex flex-col-reverse rounded-2xl shadow-md  border ">
+            <div className="mx-auto  max-w-sm animate-pulse  w-44 md:w-80 h-80 md:h-96 mt-16 flex flex-col-reverse rounded-2xl shadow-md  border ">
 
-                <div className=" bg-gradient-to-t mt-30 from-[#1B3C53] rounded-b-2xl h-[4.5rem] to-transparent pt-8 ps-4">
+                <div className=" bg-gradient-to-t mt-30 dark:from-claylight from-[#1B3C53] rounded-b-2xl h-[4.5rem] to-transparent pt-8 ps-4">
                     <div className="text-xl font-bold text-white w-32 h-5 bg-slate-300 rounded-md"></div>
                 </div>
 
@@ -73,7 +73,7 @@ function BreedCard({ breed, subBreeds }) {
     return (
 
         
-        < div className = "flip-card w-80 h-96 mt-16" >
+        < div className = "flip-card w-44 md:w-80 h-80 md:h-96 mt-8" >
             <div className="flip-card-inner w-full h-full">
 
                 <div className="flip-card-front">
@@ -84,17 +84,17 @@ function BreedCard({ breed, subBreeds }) {
                         className="w-full h-full object-cover"
                     />
 
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1B3C53] to-transparent p-4">
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t dark:from-claylight from-[#1B3C53] to-transparent p-2 md:p-4">
                         <h2 className="text-xl font-bold text-white">{breed}</h2>
                     </div>
                 </div>
 
-                <div className="flip-card-back bg-[#1B3C53] text-white p-6 flex flex-col justify-between">
+                <div className="flip-card-back dark:bg-darkBrown bg-[#1B3C53] text-white p-3 md:p-6 flex flex-col justify-between">
                     <div>
 
                         <div className="flex justify-between items-start mb-4">
-                            <h2 className="text-2xl font-bold flex items-center">
-                                <FontAwesomeIcon icon='paw' className="text-[#D2C1B6] mr-2" />
+                            <h2 className="md:text-2xl font-bold flex items-center line-clamp-5 text-sm">
+                                <FontAwesomeIcon icon='paw' className="text-[#D2C1B6] mr-2 " />
                                 {breed}
                             </h2>
 
@@ -102,7 +102,7 @@ function BreedCard({ breed, subBreeds }) {
 
                         <div className="space-y-3">
                             <div>
-                                <h3 className="font-semibold mb-6 text-[#D2C1B6] flex items-center">
+                                <h3 className="font-semibold mb-2 md:mb-6 text-[#D2C1B6] flex items-center">
                                     <FontAwesomeIcon icon='bone' className="mr-2" />
                                     sub-breeds :
                                 </h3>
@@ -116,7 +116,7 @@ function BreedCard({ breed, subBreeds }) {
                     </div>
 
                     {/* Action Button */}
-                    <button onClick={() => giveInfo(breed)} className="mt-6 w-full bg-[#D2C1B6] hover:bg-[#456882] text-[#1B3C53] font-bold py-2 px-4 rounded-lg transition flex items-center justify-center">
+                    <button onClick={() => giveInfo(breed)} className="mt-6 w-full bg-[#D2C1B6] hover:bg-[#456882] dark:hover:bg-lightBrown dark:text-creamdark text-[#1B3C53] font-bold py-1 md:py-2 px-2 md:px-4 rounded-lg transition flex items-center justify-center">
                         <FontAwesomeIcon icon='bone' className="mr-2" />
                         Learn More
                     </button>

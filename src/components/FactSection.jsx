@@ -20,9 +20,9 @@ function FactSection() {
 
     return (<section id="Fact" className="py-16 bg-deep">
         <div className="container mx-auto px-4">
-            <div className="bg-ocean rounded-2xl p-8 md:p-12 text-cream w-2/3 mx-auto">
+            <div className="bg-ocean rounded-2xl p-8 md:p-12 text-cream w-11/12 md:w-2/3 mx-auto">
                 <div className="flex flex-col md:flex-row items-center gap-8 ">
-                    <div className=" md:w-2/3">
+                    <div className=" md:w-2/3 ">
                         <h2 className="text-3xl font-bold mb-4">Did You Know?</h2>
                       {
                         loading?<img src={loadingDog} alt="" /> : <p className="text-xl mb-6">{fact}</p>
