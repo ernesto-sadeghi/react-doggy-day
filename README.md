@@ -23,12 +23,16 @@ A fun React-based web application that lets you explore the world of dogs with i
 ## live demo 🐕 :
 NOT available because:
 It is not rational to use AI api key in front-end (security problem) 
-
+**the API key in .env file doesnt work anymore .
 ## Installation 🛠️
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/doggy-day.git
-2. run project:
+2. API key: go to https://openrouter.ai/
+3. -create an acount
+4. -get api key
+5. replace it with (REACT_APP_Key) variable in .env file
+6. run project:
    ```bash
    npm start
