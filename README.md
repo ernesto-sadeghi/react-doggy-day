@@ -21,10 +21,14 @@ A fun React-based web application that lets you explore the world of dogs with i
   - Toggle between themes with a simple switch
 
 ## live demo 🐕 :
-http://doggy-day.unaux.com/?i=1
+NOT available because:
+It is not rational to use AI api key in front-end (security problem) 
 
 ## Installation 🛠️
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/doggy-day.git
+2. run project:
+   ```bash
+   npm start
