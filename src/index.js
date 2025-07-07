@@ -6,12 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import './tailwind.css';
 import './lib/fontawesome';
 import { BrowserRouter } from "react-router";
+import { DarkModeProvider } from './context/DarkModeContex.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
+    <DarkModeProvider>
     <BrowserRouter>
     <App />
     </BrowserRouter>
+  </DarkModeProvider>
   </React.StrictMode>
 );
 
