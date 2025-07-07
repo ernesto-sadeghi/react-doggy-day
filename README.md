@@ -20,6 +20,9 @@ A fun React-based web application that lets you explore the world of dogs with i
   - 🌓 Implemented using React Context API
   - Toggle between themes with a simple switch
 
+## live demo 🐕 :
+http://doggy-day.unaux.com 
+
 ## Installation 🛠️
 
 1. Clone the repository:
